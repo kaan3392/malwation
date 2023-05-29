@@ -1,7 +1,10 @@
+import Input from "../input";
+import Logo from "../logo";
+
 import * as Svg from "../../svg/Svg";
 import * as S from "./styled";
-import Logo from "../logo";
-import Input from "../input";
+
+import { linksBottom, linksTop } from "./constants";
 
 const Sidebar = () => {
   return (
@@ -12,34 +15,22 @@ const Sidebar = () => {
             <Logo />
             <Input />
             <S.List>
-              <S.ListItem>
-                <Svg.HomeIcon />
-                Home
-              </S.ListItem>
-              <S.ListItem>
-                <Svg.ProjectsIcon />
-                Projects
-              </S.ListItem>
-              <S.ListItem>
-                <Svg.TasksIcon />
-                Tasks
-              </S.ListItem>
-              <S.ListItem>
-                <Svg.UsersIcon />
-                Users
-              </S.ListItem>
+              {linksTop.map((link, index) => (
+                <S.ListItem key={index} to={link.path}>
+                  {link.icon}
+                  {link.name}
+                </S.ListItem>
+              ))}
             </S.List>
           </S.Top>
           <S.Bottom>
             <S.List>
-              <S.ListItem>
-                <Svg.SupportIcon />
-                Support
-              </S.ListItem>
-              <S.ListItem>
-                <Svg.SettingIcon />
-                Setting
-              </S.ListItem>
+              {linksBottom.map((link, index) => (
+                <S.ListItem key={index} to={link.path}>
+                  {link.icon}
+                  {link.name}
+                </S.ListItem>
+              ))}
             </S.List>
             <S.InformationContainer>
               <S.Information>

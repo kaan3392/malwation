@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -6,10 +7,8 @@ export const Container = styled.div`
   display: flex;
   background-color: #fff;
   border-right: 1px solid lightgray;
-  color:gray;
+  color: gray;
 `;
-
-
 
 export const Wrapper = styled.div`
   padding: 20px;
@@ -43,7 +42,7 @@ export const List = styled.ul`
   font-size: 18px;
 `;
 
-export const ListItem = styled.li`
+export const ListItem = styled(NavLink)`
   padding: 10px 7px;
   border-radius: 10px;
   cursor: pointer;
@@ -53,6 +52,10 @@ export const ListItem = styled.li`
   font-weight: 500;
   &:hover {
     background-color: #f5f5f5;
+  }
+
+  &.active {
+    background-color: #eaeaea;
   }
   svg {
     width: 18px;
@@ -68,33 +71,31 @@ export const Bottom = styled.div`
 `;
 
 export const InformationContainer = styled.div`
-display: flex;
-align-items: center;
-justify-content: space-between;
-border-top: 1px solid lightgray;
-padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid lightgray;
+  padding-top: 10px;
 `;
 
 export const Information = styled.div`
-display: flex;
-flex-direction: column;
-gap: 10px;
-`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+`;
 
 export const Name = styled.div`
-font-weight: 500;
+  font-weight: 500;
 `;
 
 export const Email = styled.div`
-font-size:14px;
+  font-size: 14px;
 `;
 
 export const Logout = styled.div`
-svg{
-  width: 20px;
-  fill: red;
-  cursor: pointer;
-}
-
+  svg {
+    width: 20px;
+    fill: red;
+    cursor: pointer;
+  }
 `;
-

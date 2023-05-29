@@ -31,8 +31,11 @@ export const TableRow = styled.tr`
 
   svg {
     width: 15px;
-    fill: red;
+    fill: tomato;
     cursor: pointer;
+    &:hover {
+      fill: red;
+    }
   }
 
   &:hover {
@@ -57,6 +60,7 @@ export const TableData = styled.td<IPropsTableData>`
   padding: 12px;
   text-align: left;
   text-transform: ${(props) => (props.roleOfUser ? "capitalize" : "none")};
+
 `;
 
 export const Circle = styled.div<IPropsCircle>`

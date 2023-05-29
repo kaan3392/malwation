@@ -1,6 +1,6 @@
 import * as S from "./styled";
 import { data } from "../../data";
-import { DeleteIcon } from "../../svg/Svg";
+import { DeleteIcon, UpdatetIcon } from "../../svg/Svg";
 
 const UsersTable = () => {
   return (
@@ -13,10 +13,11 @@ const UsersTable = () => {
             <S.TableHeadData>Role</S.TableHeadData>
             <S.TableHeadData>Active</S.TableHeadData>
             <S.TableHeadData></S.TableHeadData>
+            <S.TableHeadData></S.TableHeadData>
         </S.TableHead>
         <S.TableBody>
           {data.slice(0, 9).map((user) => (
-            <S.TableRow key={user.id}>
+            <S.TableRow  key={user.id}>
               <S.TableData>{user.firstName}</S.TableData>
               <S.TableData>{user.email}</S.TableData>
               <S.TableData>{user.phone}</S.TableData>
@@ -26,6 +27,9 @@ const UsersTable = () => {
               </S.TableData>
               <S.TableData>
                 <DeleteIcon />
+              </S.TableData>
+              <S.TableData>
+                <UpdatetIcon />
               </S.TableData>
             </S.TableRow>
           ))}
