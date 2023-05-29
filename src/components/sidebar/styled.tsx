@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  flex: 1;
+  flex: 2;
   height: 100%;
   display: flex;
   background-color: #fff;
@@ -28,37 +28,6 @@ export const Top = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: 20px;
-`;
-
-export const Title = styled.h1`
-  font-size: 28px;
-  letter-spacing: 4px;
-  font-weight: 500;
-`;
-
-export const SearchContainer = styled.div`
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  border-radius: 10px;
-  border: 2px solid #c9c9c9;
-
-  svg {
-    width: 20px;
-    fill: lightgray;
-    margin-right: 10px;
-  }
-`;
-
-export const SearchInput = styled.input`
-  border: none;
-  outline: none;
-  font-size: 16px;
-  width: 80%;
-  &::placeholder {
-    font-size: 16px;
-    color: lightgray;
-  }
 `;
 
 export const List = styled.ul`

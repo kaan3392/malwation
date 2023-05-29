@@ -5,6 +5,7 @@ import "./reset.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import UserList from "./pages/users/index.tsx";
 import "./global.css"
+import UpdateUser from "./pages/updateUser/index.tsx";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: "user",
     element: <UserList />,
+  },
+  {
+    path: "update/:id",
+    element: <UpdateUser />,
   },
 ]);
 
