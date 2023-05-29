@@ -1,10 +1,11 @@
+import { IPropsLetter } from "../types";
 import * as S from "./styled";
 
-const LetterO = () => {
+const LetterO: React.FC<IPropsLetter> = ({ login }) => {
   return (
-    <S.Div1>
-      <S.Div2></S.Div2>
-      <S.Div3></S.Div3>
+    <S.Div1 login={login}>
+      <S.Div2 login={login}  />
+      <S.Div3 login={login} />
     </S.Div1>
   );
 };

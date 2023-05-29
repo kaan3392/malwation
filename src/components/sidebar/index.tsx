@@ -13,19 +13,19 @@ const Sidebar = () => {
             <Input />
             <S.List>
               <S.ListItem>
-                <Svg.Home />
+                <Svg.HomeIcon />
                 Home
               </S.ListItem>
               <S.ListItem>
-                <Svg.Projects />
+                <Svg.ProjectsIcon />
                 Projects
               </S.ListItem>
               <S.ListItem>
-                <Svg.Tasks />
+                <Svg.TasksIcon />
                 Tasks
               </S.ListItem>
               <S.ListItem>
-                <Svg.Users />
+                <Svg.UsersIcon />
                 Users
               </S.ListItem>
             </S.List>
@@ -33,11 +33,11 @@ const Sidebar = () => {
           <S.Bottom>
             <S.List>
               <S.ListItem>
-                <Svg.Support />
+                <Svg.SupportIcon />
                 Support
               </S.ListItem>
               <S.ListItem>
-                <Svg.Setting />
+                <Svg.SettingIcon />
                 Setting
               </S.ListItem>
             </S.List>
@@ -47,7 +47,7 @@ const Sidebar = () => {
                 <S.Email>kaanalacali@gmail.com</S.Email>
               </S.Information>
               <S.Logout>
-                <Svg.Exit />
+                <Svg.ExitIcon />
               </S.Logout>
             </S.InformationContainer>
           </S.Bottom>

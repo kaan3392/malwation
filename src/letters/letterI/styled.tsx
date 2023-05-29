@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import { IPropsLetter } from "../types";
 
-export const LetterI = styled.span`
-  font-size: 28px;
+export const LetterI = styled.span<IPropsLetter>`
+  font-size: ${({ login }) => (login ? "35px" : "28px")};
   font-weight: 600;
   position: relative;
   color: gray;
@@ -11,11 +12,11 @@ export const LetterI = styled.span`
   &:after {
     content: "";
     position: absolute;
-    bottom: 6px;
-    left: 2px;
-    border-bottom: 5px solid white;
-    border-left: 5px solid transparent;
-    border-top: 5px solid transparent;
+    bottom: ${({ login }) => (login ? "8.5px" : "6px")};
+    left: ${({ login }) => (login ? "3px" : "2px")};
+    border-bottom: ${({ login }) => (login ? "6px solid #F5F5F5" : "5px solid white")};
+    border-left: ${({ login }) => (login ? "6px solid transparent" : "5px solid transparent")};
+    border-top: ${ ({ login }) => (login ? "6px solid transparent" : "5px solid transparent")};
     width: 0px;
     height: 0px;
   }

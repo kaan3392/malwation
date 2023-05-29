@@ -15,6 +15,7 @@ export const Wrapper = styled.div`
   padding: 20px;
   height: 100%;
 `;
+
 export const Main = styled.div`
   height: 100%;
   display: flex;
@@ -27,7 +28,7 @@ export const Top = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
 `;
 
 export const List = styled.ul`

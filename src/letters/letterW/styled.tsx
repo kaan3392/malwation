@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import { IPropsLetter } from "../types";
 
-export const WLetter = styled.span`
-  font-size: 28px;
+export const WLetter = styled.span<IPropsLetter>`
+  font-size: ${({ login }) => (login ? "35px" : "28px")};
   font-weight: 600;
   position: relative;
   color: gray;
@@ -9,8 +10,8 @@ export const WLetter = styled.span`
   &:after {
     content: "";
     position: absolute;
-    top: 5px;
-    left: 10px;
+    top: ${({ login }) => (login ? "8px" : "5px")};
+    left: ${({ login }) => (login ? "13px" : "10px")};
     width: 2px;
     height: 15px;
     background-color: white;

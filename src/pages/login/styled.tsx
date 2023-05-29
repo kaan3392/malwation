@@ -51,64 +51,15 @@ export const Form = styled.form`
   margin-top: 20px;
 `;
 
-export const FormItem = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-`;
-
-export const Label = styled.label`
-  color: #5e6c83;
-  font-size: 15px;
-  align-self: flex-start;
-  font-weight: bold;
-`;
-
-export const Input = styled.input`
-  width: 100%;
-  height: 40px;
-  border: 2px solid lightgray;
-  border-radius: 10px;
-  padding: 5px 10px;
-  font-size: 16px;
-  color: #5e6c83;
-  &::placeholder {
-    color: lightgray;
-    font-size: 16px;
-  }
-  &:focus {
-    outline: none;
-  }
-`;
-
-export const Button = styled.button`
-  width: 100%;
-  height: 40px;
-  background-color: #2e7bf8;
-  border: 1px solid #2e7bf8;
-  border-radius: 5px;
-  color: #fff;
-  font-size: 15px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  outline: none;
-  cursor: pointer;
-  &:hover {
-    background-color: inherit;
-    color: #2e7bf8;
-    border: 1px solid #2e7bf8;
-  }
-`;
-
 export const Forgot = styled(Link)`
   color: #2e7bf8;
   font-size: 15px;
   margin-bottom: 10px;
   align-self: flex-start;
   font-weight: bold;
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 export const Account = styled.div`
@@ -121,4 +72,8 @@ export const Register = styled(Link)`
   font-size: 15px;
   margin-bottom: 10px;
   font-weight: bold;
+  &:hover {
+    text-decoration: underline;
+  }
+  
 `;

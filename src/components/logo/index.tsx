@@ -1,15 +1,16 @@
 import LetterI from "../../letters/letterI";
 import LetterO from "../../letters/letterO";
 import LetterW from "../../letters/letterW";
+import { IPropsLetter } from "../../letters/types";
 import * as S from "./styled";
 
-const Logo = () => {
+const Logo:React.FC<IPropsLetter> = ({login}) => {
   return (
-    <S.Title>
+    <S.Title login={login}>
       MAL
-      <LetterW />
-      AT <LetterI />
-      <LetterO />N
+      <LetterW login={login} />
+      AT <LetterI login={login} />
+      <LetterO login={login} />N
     </S.Title>
   );
 };

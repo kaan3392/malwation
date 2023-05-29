@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import { IPropsLetter } from "../types";
 
-export const Div1 = styled.span`
+export const Div1 = styled.span<IPropsLetter>`
   
-  width: 20px;
-  height: 20px;
+  width: ${({ login }) => (login ? "25px" : "20px")};
+  height: ${({ login }) => (login ? "25px" : "20px")};
   background-color: inherit;
   border: 5px solid black;
   position: relative;
@@ -19,8 +20,8 @@ export const Div1 = styled.span`
     left:4px;
     right:0;
     bottom:0;
-    font-size:50px;
-    color: white;
+    font-size:${({ login }) => (login ? "60px" : "50px")};
+    color: ${({ login }) => (login ? "#F5F5F5" : "white")};
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,19 +29,19 @@ export const Div1 = styled.span`
   }
 `;
 
-export const Div2 = styled.span`
+export const Div2 = styled.span<IPropsLetter>`
   position: absolute;
-  width: 5px;
-  height: 5px;
+  width: ${({ login }) => (login ? "4px" : "5px")};
+  height: ${({ login }) => (login ? "4px" : "5px")};
   background-color: #6f6f6f;
-  left: -5px;
+  left: ${({ login }) => (login ? "-4px" : "-5px")};
   bottom: 0;
 
   &:after {
     content: "";
     position: absolute;
-    bottom: -5px;
-    left: 0;
+    bottom: ${({ login }) => (login ? "-4px" : "-5px")};
+    left: 0px;
     border-left: 5px solid #6f6f6f;
     border-bottom: 5px solid transparent;
     border-right: 5px solid transparent;
@@ -49,19 +50,19 @@ export const Div2 = styled.span`
   }
 `;
 
-export const Div3 = styled.span`
+export const Div3 = styled.span<IPropsLetter>`
   position: absolute;
-  width: 5px;
+  width: ${({ login }) => (login ? "4px" : "5px")};
   height: 7px;
   background-color: #6f6f6f;
   top: 0px;
-  right: -5px;
+  right: ${({ login }) => (login ? "-4px" : "-5px")};
   rotate: 180deg;
 
   &:after {
     content: "";
     position: absolute;
-    bottom: -5px;
+    bottom: ${({ login }) => (login ? "-4.5px" : "-5px")};
     left: 0px;
     border-left: 5px solid #6f6f6f;
     border-bottom: 5px solid transparent;

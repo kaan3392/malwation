@@ -1,8 +1,9 @@
+import { IPropsLetter } from "../types";
 import * as S from "./styled";
 
-const LetterW = () => {
+const LetterW:React.FC<IPropsLetter> = ({login}) => {
   return (
-    <S.WLetter>W</S.WLetter>
+    <S.WLetter  login={login} >W</S.WLetter>
   );
 };
 

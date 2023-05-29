@@ -5,7 +5,7 @@ import { InputProps } from "./types";
 const Input: React.FC<InputProps> = ({ long, placeholder="Search" }) => {
   return (
     <S.SearchContainer long={long} >
-      <Svg.Search />
+      <Svg.SearchIcon />
       <S.SearchInput long={long} type="text" placeholder={placeholder} />
     </S.SearchContainer>
   );

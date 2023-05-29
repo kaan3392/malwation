@@ -1,8 +1,8 @@
 import Input from "../input";
 import Pagination from "../pagination";
 import UsersTable from "../userTable";
-import * as S from "./styled";
 import { FilterIcon } from "../../svg/Svg";
+import * as S from "./styled";
 
 const Users = () => {
   return (
