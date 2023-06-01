@@ -3,6 +3,10 @@ import UserList from "../pages/usersList";
 import UpdateUser from "../pages/updateUser";
 import Login from "../pages/login";
 import Layout from "../components/layout";
+import PrivateRoute from "../components/PrivateRoute";
+import HomePage from "../pages/home";
+import ProjectsPage from "../pages/project";
+import TasksPage from "../pages/tasks";
 
 export const router = createBrowserRouter([
   {
@@ -11,8 +15,24 @@ export const router = createBrowserRouter([
   },
   {
     path: "/",
-    element: <Layout />,
+    element: (
+      <PrivateRoute>
+        <Layout />
+      </PrivateRoute>
+    ),
     children: [
+      {
+        index: true,
+        element: <HomePage />,
+      },
+      {
+        path: "/projects",
+        element: <ProjectsPage />,
+      },
+      {
+        path: "/tasks",
+        element: <TasksPage />,
+      },
       {
         path: "/users",
         element: <UserList />,

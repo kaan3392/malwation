@@ -5,8 +5,13 @@ import * as Svg from "../../svg/Svg";
 import * as S from "./styled";
 
 import { linksBottom, linksTop } from "./constants";
+import { useStore } from "../../store";
 
 const Sidebar = () => {
+  const logout = useStore((state) => state.logout);
+  const currentUser = useStore((state) => state.currentUser);
+
+
   return (
     <S.Container>
       <S.Wrapper>
@@ -34,10 +39,10 @@ const Sidebar = () => {
             </S.List>
             <S.InformationContainer>
               <S.Information>
-                <S.Name>Kaan Alacali</S.Name>
-                <S.Email>kaanalacali@gmail.com</S.Email>
+                <S.Name>{currentUser?.name}</S.Name>
+                <S.Email>{currentUser?.email}</S.Email>
               </S.Information>
-              <S.Logout>
+              <S.Logout onClick={logout}>
                 <Svg.ExitIcon />
               </S.Logout>
             </S.InformationContainer>

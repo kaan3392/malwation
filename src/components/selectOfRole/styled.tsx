@@ -18,7 +18,7 @@ export const Label = styled.label`
   text-transform: capitalize;
 `;
 
-export const Input = styled.input`
+export const Select = styled.select`
   width: 100%;
   height: 40px;
   border: 2px solid lightgray;

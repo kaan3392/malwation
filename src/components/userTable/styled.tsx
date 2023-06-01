@@ -3,6 +3,7 @@ import { IPropsCircle, IPropsTableData } from "./types";
 
 export const Container = styled.div`
   width: 100%;
+  /* min-height: 450px; */
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -60,7 +61,6 @@ export const TableData = styled.td<IPropsTableData>`
   padding: 12px;
   text-align: left;
   text-transform: ${(props) => (props.roleOfUser ? "capitalize" : "none")};
-
 `;
 
 export const Circle = styled.div<IPropsCircle>`

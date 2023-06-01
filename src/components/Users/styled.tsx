@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -13,7 +14,7 @@ export const Wrapper = styled.div`
   height: 85%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 40px;
 `;
 
 export const Title = styled.div`
@@ -25,6 +26,7 @@ export const InputAndFilterContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 `;
 
 export const FilterContainer = styled.div`
@@ -41,5 +43,34 @@ export const FilterContainer = styled.div`
   svg {
     width: 20px;
     fill: gray;
+  }
+`;
+
+export const FilteredUsersContainer = styled.div`
+  position: absolute;
+  background-color: white;
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.25));
+  border-radius: 5px;
+  width: 45%;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 2;
+  top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+`;
+
+export const FilteredUsersWrapper = styled.div`
+  padding: 10px;
+`;
+export const FilteredUserItem = styled(Link)`
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+
+  &:hover {
+    background-color: #f5f5f5;
   }
 `;

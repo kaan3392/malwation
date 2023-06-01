@@ -20,4 +20,9 @@ export const Button = styled.button<ButtonProps>`
     color: #2e7bf8;
     border: 1px solid #2e7bf8;
   }
+  &:disabled {
+    background-color: #eaeaea;
+    color: #a6a6a6;
+    cursor: not-allowed;
+  }
 `;

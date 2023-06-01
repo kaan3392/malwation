@@ -11,10 +11,12 @@ export const Boxes = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  `;
+`;
+interface BoxProps {
+  active?: boolean;
+}
 
-export const Box = styled.div`
+export const Box = styled.div<BoxProps>`
   width: 30px;
   height: 30px;
   border: 1px solid gray;
@@ -23,17 +25,17 @@ export const Box = styled.div`
   justify-content: center;
   align-items: center;
   cursor: pointer;
-    &:first-child {
-        border-left: 1px solid gray;
-        font-weight: 500;
-    }
+  background-color: ${({ active }) => active && "lightgray"};
+  &:first-child {
+    border-left: 1px solid gray;
+    font-weight: 500;
+  }
 
-    &:last-child {
-        font-weight: 500;
-    }
+  &:last-child {
+    font-weight: 500;
+  }
 
-    &:hover {
-        background-color: lightgray;
-    }
-
+  &:hover {
+    background-color: #eaeaea;
+  }
 `;

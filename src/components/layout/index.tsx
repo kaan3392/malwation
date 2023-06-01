@@ -1,14 +1,14 @@
-import { Outlet } from "react-router-dom"
-import Sidebar from "../sidebar"
-import * as S from "./styled"
+import { Outlet } from "react-router-dom";
+import Sidebar from "../sidebar";
+import * as S from "./styled";
 
 const Layout = () => {
   return (
     <S.Container>
       <Sidebar />
-      <Outlet/>
+      <Outlet />
     </S.Container>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

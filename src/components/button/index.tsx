@@ -1,9 +1,9 @@
 import * as S from "./styled"
 import { ButtonProps } from "./types"
 
-const Button:React.FC<ButtonProps> = ({children, login}) => {
+const Button:React.FC<ButtonProps> = ({ login, ...props}) => {
   return (
-    <S.Button login={login} >{children}</S.Button>
+    <S.Button type="submit" {...props} login={login} />
   )
 }
 
