@@ -1,13 +1,13 @@
 import { createBrowserRouter } from "react-router-dom";
-import Login from "../pages/login";
+import Login from "../pages/login/LoginPage";
 import PrivateRoute from "../components/PrivateRoute";
-import Layout from "../components/Layout";
-import HomePage from "../pages/home";
-import ProjectsPage from "../pages/project";
-import TasksPage from "../pages/tasks";
-import UserList from "../pages/usersList";
-import UpdateUser from "../pages/updateUser";
-import NotFound from "../pages/notFound";
+import Layout from "../components/Layout/Layout";
+import HomePage from "../pages/home/HomePage";
+import ProjectsPage from "../pages/projects/ProjectsPage";
+import TasksPage from "../pages/tasks/TasksPage";
+import UserList from "../pages/usersList/UserList";
+import UpdateUser from "../pages/updateUser/UpdateUser";
+import NotFound from "../pages/notFound/NotFound";
 
 export const router = createBrowserRouter([
   {

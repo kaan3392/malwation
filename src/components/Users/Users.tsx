@@ -2,10 +2,11 @@ import { useMemo, useState } from "react";
 import * as S from "./styled";
 import { useStore } from "../../store";
 import { User } from "../../types";
-import Input from "../Input";
+
 import { FilterIcon } from "../../svg/Svg";
-import UsersTable from "../UserTable";
-import Pagination from "../Pagination";
+import UsersTable from "../UserTable/UserTable";
+import Pagination from "../Pagination/Pagination";
+import Input from "../Input/Input";
 
 const Users = () => {
   const users = useStore((state) => state.users);

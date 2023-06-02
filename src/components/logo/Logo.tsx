@@ -1,9 +1,9 @@
 
 import * as S from "./styled";
 import { IPropsLetter } from "../../letters/types";
-import LetterW from "../../letters/LetterW";
-import LetterI from "../../letters/LetterI";
-import LetterO from "../../letters/LetterO";
+import LetterW from "../../letters/LetterW/LetterW";
+import LetterI from "../../letters/LetterI/LetterI";
+import LetterO from "../../letters/LetterO/LetterO";
 
 const Logo:React.FC<IPropsLetter> = ({login}) => {
   return (

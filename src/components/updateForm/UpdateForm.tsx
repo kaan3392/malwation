@@ -1,7 +1,7 @@
 import * as S from "./styled";
-import FormItem from "../FormItem";
-import SelectOfRole from "../SelectOfRole";
-import Button from "../Button";
+import FormItem from "../FormItem/FormItem";
+import SelectOfRole from "../SelectOfRole/SelectOfRole";
+import Button from "../Button/Button";
 import { useNavigate } from "react-router-dom";
 import { useStore } from "../../store";
 import { Controller, useForm } from "react-hook-form";
