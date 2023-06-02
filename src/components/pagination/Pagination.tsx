@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useStore } from "../../store";
+import { useStore } from "../../store.ts";
 import * as S from "./styled";
 
 const Pagination = () => {

@@ -4,9 +4,9 @@ import { useStore } from "../../store";
 import { User } from "../../types";
 
 import { FilterIcon } from "../../svg/Svg";
-import UsersTable from "../UserTable/UserTable";
-import Pagination from "../Pagination/Pagination";
-import Input from "../Input/Input";
+import UsersTable from "../UserTable/UserTable.tsx";
+import Pagination from "../Pagination/Pagination.tsx";
+import Input from "../Input/Input.tsx";
 
 const Users = () => {
   const users = useStore((state) => state.users);

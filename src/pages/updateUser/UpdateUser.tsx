@@ -2,9 +2,9 @@ import { useLocation } from "react-router-dom";
 import { useStore } from "../../store";
 import { useEffect } from "react";
 import toast, { Toaster } from "react-hot-toast";
-import LoadingScreen from "../../components/Loading/Loading";
+import LoadingScreen from "../../components/Loading/Loading.tsx";
 import { ArrowLeftIcon } from "../../svg/Svg";
-import UpdateForm from "../../components/UpdateForm/UpdateForm";
+import UpdateForm from "../../components/UpdateForm/UpdateForm.tsx";
 import * as S from "./styled";
 
 const UpdateUser = () => {

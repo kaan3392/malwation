@@ -2,7 +2,7 @@ import * as S from "./styled";
 import { DeleteIcon, UpdatetIcon } from "../../svg/Svg";
 import { useStore } from "../../store";
 import { useEffect, useMemo } from "react";
-import LoadingScreen from "../Loading/Loading";
+import LoadingScreen from "../Loading/Loading.tsx";
 import { useNavigate } from "react-router-dom";
 
 const UsersTable = () => {

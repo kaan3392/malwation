@@ -1,5 +1,5 @@
 import * as S from "./styled";
-import * as Svg from "../../svg/Svg";
+import * as Svg from "../../svg/Svg.tsx";
 import { InputProps } from "./types";
 
 const Input: React.FC<InputProps> = ({ long, placeholder="Search", onChange }) => {
