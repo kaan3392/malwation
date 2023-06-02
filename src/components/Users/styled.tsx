@@ -17,7 +17,7 @@ export const Wrapper = styled.div`
   gap: 40px;
 @media only screen and (max-width: 768px) {
    width:95%;
-   gap: 20px;
+   gap: 30px;
    height: 90%;
   }
 

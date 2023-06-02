@@ -7,7 +7,7 @@ const Pagination = () => {
   const changePage = useStore((state) => state.changePage);
   const currentPage = useStore((state) => state.currentPage);
 
-  const pages = Math.ceil(users.length / 9);
+  const pages = Math.ceil(users.length / 8);
 
   const handleClick = (direction: string) => {
     if (direction === "next" && currentPage < pages) {

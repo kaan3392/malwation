@@ -7,9 +7,11 @@ import { FilterIcon } from "../../svg/Svg";
 import UsersTable from "../UserTable/UserTable";
 import Pagination from "../Pagination/Pagination";
 import Input from "../Input/Input";
+import LoadingScreen from "../Loading/Loading";
 
 const Users = () => {
   const users = useStore((state) => state.users);
+  const usersLoading = useStore((state) => state.usersLoading);
   const [search, setSearch] = useState("");
 
   const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -24,6 +26,10 @@ const Users = () => {
         user.name.toLowerCase().includes(search.toLowerCase()) 
     );
   }, [search, users]);
+
+  if (usersLoading) {
+    return <LoadingScreen />;
+  }
 
   return (
     <S.Container>

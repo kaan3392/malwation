@@ -8,7 +8,6 @@ export const Container = styled.div`
   background-color: #fff;
   border-right: 1px solid lightgray;
   color: gray;
-  
 `;
 
 export const Wrapper = styled.div`
