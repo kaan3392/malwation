@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  /* min-height: 450px; */
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -12,6 +11,7 @@ export const Table = styled.table`
   width: 100%;
   min-width: 50vw;
   border-collapse: collapse;
+  overflow: auto;
 `;
 
 export const TableHead = styled.thead`
@@ -33,6 +33,9 @@ export const TableRow = styled.tr`
     width: 15px;
     fill: tomato;
     cursor: pointer;
+    @media only screen and (max-width: 768px) {
+    width: 12px;
+  }
     &:hover {
       fill: red;
     }
@@ -54,6 +57,9 @@ export const TableRow = styled.tr`
 export const TableHeadData = styled.th`
   padding: 12px;
   text-align: left;
+  @media only screen and (max-width: 768px) {
+    padding: 8px;
+  }
 `;
 
 export interface IPropsTableData {
@@ -64,7 +70,9 @@ export const TableData = styled.td<IPropsTableData>`
   padding: 12px;
   text-align: left;
   text-transform: ${(props) => (props.roleOfUser ? "capitalize" : "none")};
-
+@media only screen and (max-width: 768px) {
+    padding: 6px;
+  }
   
 `;
 
@@ -77,4 +85,9 @@ export const Circle = styled.div<IPropsCircle>`
   height: 12px;
   border-radius: 50%;
   background-color: ${(props) => (props.active ? "limegreen" : "red")};
+@media only screen and (max-width: 768px) {
+    width: 10px;
+    height: 10px;
+  }
+
 `;

@@ -26,6 +26,10 @@ export const Select = styled.select`
   padding: 5px 10px;
   font-size: 16px;
   color: #5e6c83;
+  @media only screen and (max-width: 768px) {
+    height: 30px;
+    font-size: 14px;
+  }
   &::placeholder {
     color: lightgray;
     font-size: 16px;

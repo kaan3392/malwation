@@ -86,11 +86,11 @@ const UpdateForm = () => {
         />
       </S.InputContainer>
       <S.ActiveContainer>
+        <S.ActiveLabel>Active</S.ActiveLabel>
         <Controller
           control={control}
           name="active"
           render={({ field }) => {
-            console.log("*", field);
             return (
               <S.ActiveButton
                 ref={field.ref}

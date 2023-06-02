@@ -15,11 +15,21 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 40px;
+@media only screen and (max-width: 768px) {
+   width:95%;
+   gap: 20px;
+   height: 90%;
+  }
+
 `;
+
 
 export const Title = styled.div`
   font-size: 30px;
   font-weight: 600;
+  @media only screen and (max-width: 768px) {
+    font-size: 25px;
+  }
 `;
 
 export const InputAndFilterContainer = styled.div`
@@ -39,6 +49,9 @@ export const FilterContainer = styled.div`
   background-color: white;
   cursor: pointer;
   height: 40px;
+  @media only screen and (max-width: 768px) {
+    height: 30px;
+  }
 
   svg {
     width: 20px;
@@ -59,16 +72,26 @@ export const FilteredUsersContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 5px;
+  @media only screen and (max-width: 768px) {
+    top: 30px;
+
+  }
 `;
 
 export const FilteredUsersWrapper = styled.div`
   padding: 10px;
+  @media only screen and (max-width: 768px) {
+    padding: 5px;
+  }
 `;
 export const FilteredUserItem = styled(Link)`
   display: flex;
   align-items: center;
   cursor: pointer;
   padding: 10px;
+  @media only screen and (max-width: 768px) {
+    padding: 5px;
+  }
 
   &:hover {
     background-color: #f5f5f5;

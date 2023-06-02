@@ -8,11 +8,15 @@ export const Container = styled.div`
   background-color: #fff;
   border-right: 1px solid lightgray;
   color: gray;
+  
 `;
 
 export const Wrapper = styled.div`
   padding: 20px;
   height: 100%;
+  @media only screen and (max-width: 768px) {
+    padding: 10px;
+  }
 `;
 
 export const Main = styled.div`
@@ -28,6 +32,9 @@ export const Top = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: 15px;
+  @media only screen and (max-width: 768px) {
+    gap: 10px;
+  }
 `;
 
 export const List = styled.ul`
@@ -40,6 +47,10 @@ export const List = styled.ul`
   width: 100%;
   margin-top: 20px;
   font-size: 18px;
+  @media only screen and (max-width: 768px) {
+    gap: 10px;
+    margin-top: 10px;
+  }
 `;
 
 export const ListItem = styled(NavLink)`
@@ -50,6 +61,9 @@ export const ListItem = styled(NavLink)`
   align-items: center;
   gap: 20px;
   font-weight: 500;
+  @media only screen and (max-width: 768px) {
+    gap: 15px;
+  }
   &:hover {
     background-color: #f5f5f5;
   }
@@ -68,6 +82,9 @@ export const Bottom = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: 20px;
+  @media only screen and (max-width: 768px) {
+    gap: 10px;
+  }
 `;
 
 export const InformationContainer = styled.div`
@@ -76,12 +93,16 @@ export const InformationContainer = styled.div`
   justify-content: space-between;
   border-top: 1px solid lightgray;
   padding-top: 10px;
+  gap: 10px;
 `;
 
 export const Information = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
+  @media only screen and (max-width: 768px) {
+    gap: 5px;
+  }
 `;
 
 export const Name = styled.div`
@@ -90,6 +111,9 @@ export const Name = styled.div`
 
 export const Email = styled.div`
   font-size: 14px;
+  @media only screen and (max-width: 768px) {
+    font-size: 14px;
+  }
 `;
 
 export const Logout = styled.div`
@@ -97,5 +121,8 @@ export const Logout = styled.div`
     width: 20px;
     fill: red;
     cursor: pointer;
+    @media only screen and (max-width: 768px) {
+    width: 18px;
+  }
   }
 `;

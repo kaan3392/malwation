@@ -17,6 +17,10 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 40px;
+  @media only screen and (max-width: 768px) {
+    width: 90%;
+
+  }
 `;
 
 export const Back = styled(Link)`
@@ -34,6 +38,9 @@ export const Back = styled(Link)`
 export const Title = styled.div`
   font-size: 30px;
   font-weight: 600;
+  @media only screen and (max-width: 768px) {
+    font-size: 25px;
+  }
 `;
 
 

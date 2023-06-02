@@ -15,6 +15,14 @@ export const Button = styled.button<ButtonProps>`
   outline: none;
   cursor: pointer;
   align-self: ${(props) => !props.login && "flex-end"};
+  transition: all 0.5s ease;
+
+  @media only screen and (max-width: 768px) {
+    width: ${(props) => (props.login ? "100%" : "100px")};
+    height: ${(props) => props.login && "30px"};
+    font-size: 14px;
+    padding: ${(props) => (props.login ? "0px" : "5px 2px")};
+  }
   &:hover {
     background-color: inherit;
     color: #2e7bf8;

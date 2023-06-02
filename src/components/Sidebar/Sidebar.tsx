@@ -1,5 +1,3 @@
-
-
 import * as S from "./styled";
 import * as Svg from "../../svg/Svg";
 

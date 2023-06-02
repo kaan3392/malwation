@@ -76,3 +76,8 @@ export const Option = styled.option`
   font-weight: bold;
   text-transform: capitalize;
 `;
+
+export const ActiveLabel = styled.span`
+  font-size: 15px;
+  font-weight: 500;
+`;

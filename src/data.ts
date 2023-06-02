@@ -5,7 +5,7 @@ export const data = [
     name: "Kaan",
     role: "Admin",
     email: "kaan@gmail.com",
-    phone: "+63 791 675 8914",
+    phone: "+1 234 567",
     active: true,
     password:"123456"
   },
@@ -14,7 +14,7 @@ export const data = [
     name: "Sheldon",
     role: "User",
     email: "hbingley1@plala.or.jp",
-    phone: "+7 813 117 7139",
+    phone: "+1 234 567",
     active: false,
     password:"123456"
   },
@@ -23,7 +23,7 @@ export const data = [
     name: "Terrill",
     role: "User",
     email: "rshawe2@51.la",
-    phone: "+63 739 292 7942",
+    phone: "+1 234 567",
     active: false,
     password:"123456"
   },
@@ -32,7 +32,7 @@ export const data = [
     name: "Miles",
     role: "User",
     email: "yraigatt3@nature.com",
-    phone: "+86 461 145 4186",
+    phone: "+1 234 567",
     active: true,
     password:"123456"
   },
@@ -41,7 +41,7 @@ export const data = [
     name: "Mavis",
     role: "User",
     email: "kmeus4@upenn.edu",
-    phone: "+372 285 771 1911",
+    phone: "+1 234 567",
     active: false,
     password:"123456"
   },
@@ -50,7 +50,7 @@ export const data = [
     name: "Alison",
     role: "User",
     email: "jtreleven5@nhs.uk",
-    phone: "+351 527 735 3642",
+    phone: "+1 234 567",
     active: true,
     password:"123456"
   },
@@ -59,7 +59,7 @@ export const data = [
     name: "Oleta",
     role: "User",
     email: "dpettegre6@columbia.edu",
-    phone: "+62 640 802 7111",
+    phone: "+1 234 567",
     active: true,
     password:"123456"
   },
@@ -68,7 +68,7 @@ export const data = [
     name: "Ewell",
     role: "User",
     email: "ggude7@chron.com",
-    phone: "+86 946 297 2275",
+    phone: "+1 234 567",
     active: true,
     password:"123456"
   },
@@ -77,7 +77,7 @@ export const data = [
     name: "Demetrius",
     role: "User",
     email: "nloiterton8@aol.com",
-    phone: "+86 356 590 9727",
+    phone: "+1 234 567",
     active: true,
     password:"123456"
   },
@@ -86,7 +86,7 @@ export const data = [
     name: "Eleanora",
     role: "User",
     email: "umcgourty9@jalbum.net",
-    phone: "+60 184 408 0824",
+    phone: "+1 234 567",
     active: true,
     password:"123456"
   },
@@ -95,7 +95,7 @@ export const data = [
     name: "Marcel",
     role: "User",
     email: "acharlota@liveinternet.ru",
-    phone: "+967 253 210 0344",
+    phone: "+1 234 567",
     active: true,
     password:"123456"
   },
@@ -104,7 +104,7 @@ export const data = [
     name: "Assunta",
     role: "User",
     email: "rhallawellb@dropbox.com",
-    phone: "+380 962 542 6549",
+    phone: "+1 234 567",
     active: true,
     password:"123456"
   },
@@ -113,7 +113,7 @@ export const data = [
     name: "Trace",
     role: "User",
     email: "lgribbinc@posterous.com",
-    phone: "+1 609 937 3468",
+    phone: "+1 234 567",
     active: true,
     password:"123456"
   },
@@ -122,7 +122,7 @@ export const data = [
     name: "Enoch",
     role: "User",
     email: "mturleyd@tumblr.com",
-    phone: "+94 912 100 5118",
+    phone: "+1 234 567",
     active: false,
     password:"123456"
   },
@@ -131,7 +131,7 @@ export const data = [
     name: "Jeanne",
     role: "User",
     email: "kminchelle@qq.com",
-    phone: "+86 581 108 7855",
+    phone: "+1 234 567",
     active: true,
     password:"123456"
   },
@@ -140,7 +140,7 @@ export const data = [
     name: "Trycia",
     role: "User",
     email: "dpierrof@vimeo.com",
-    phone: "+420 833 708 0340",
+    phone: "+1 234 567",
     active: true,
     password:"123456"
   },
@@ -149,7 +149,7 @@ export const data = [
     name: "Bradford",
     role: "User",
     email: "vcholdcroftg@ucoz.com",
-    phone: "+420 874 628 3710",
+    phone: "+1 234 567",
     active: true,
     password:"123456"
   },
@@ -158,7 +158,7 @@ export const data = [
     name: "Arely",
     role: "User",
     email: "sberminghamh@chron.com",
-    phone: "+55 886 766 8617",
+    phone: "+1 234 567",
     active: false,
     password:"123456"
   },
@@ -167,7 +167,7 @@ export const data = [
     name: "Gust",
     role: "User",
     email: "gusty@gmail.com",
-    phone: "+86 886 889 0258",
+    phone: "+1 234 567",
     active: true,
     password:"123456"
   },
@@ -176,7 +176,7 @@ export const data = [
     name: "Lenna",
     role: "User",
     email: "aeatockj@psu.edu",
-    phone: "+1 904 601 7177",
+    phone: "+1 234 567",
     active: true,
     password:"123456"
   },
@@ -185,7 +185,7 @@ export const data = [
     name: "Doyle",
     role: "User",
     email: "ckensleyk@pen.io",
-    phone: "+86 634 419 6839",
+    phone: "+1 234 567",
     active: true,
     password:"123456"
   },
@@ -194,7 +194,7 @@ export const data = [
     name: "Tressa",
     role: "User",
     email: "froachel@howstuffworks.com",
-    phone: "+34 517 104 6248",
+    phone: "+1 234 567",
     active: true,
     password:"123456"
   },
@@ -203,7 +203,7 @@ export const data = [
     name: "Felicity",
     role: "User",
     email: "beykelhofm@wikispaces.com",
-    phone: "+63 919 564 1690",
+    phone: "+1 234 567",
     active: true,
     password:"123456"
   },
@@ -212,7 +212,7 @@ export const data = [
     name: "Jocelyn",
     role: "User",
     email: "brickeardn@fema.gov",
-    phone: "+7 968 462 1292",
+    phone: "+1 234 567",
     active: true,
     password:"123456"
   },
@@ -221,7 +221,7 @@ export const data = [
     name: "Edwina",
     role: "User",
     email: "dfundello@amazon.co.jp",
-    phone: "+86 376 986 8945",
+    phone: "+1 234 567",
     active: false,
     password:"123456"
   },
@@ -230,7 +230,7 @@ export const data = [
     name: "Griffin",
     role: "User",
     email: "lgronaverp@cornell.edu",
-    phone: "+62 511 790 0161",
+    phone: "+1 234 567",
     active: true,
     password:"123456"
   },
@@ -239,7 +239,7 @@ export const data = [
     name: "Piper",
     role: "User",
     email: "fokillq@amazon.co.jp",
-    phone: "+60 785 960 7918",
+    phone: "+1 234 567",
     active:true,
     password:"123456"
   },
@@ -248,7 +248,7 @@ export const data = [
     name: "Kody",
     role: "User",
     email: "xisherwoodr@ask.com",
-    phone: "+81 859 545 8951",
+    phone: "+1 234 567",
     active: true,
     password:"123456"
   },
@@ -257,7 +257,7 @@ export const data = [
     name: "Macy",
     role: "User",
     email: "jissetts@hostgator.com",
-    phone: "+81 915 649 2384",
+    phone: "+1 234 567",
     active: false,
     password:"123456"
   },
@@ -266,7 +266,7 @@ export const data = [
     name: "Maurine",
     role: "User",
     email: "kdulyt@umich.edu",
-    phone: "+48 143 590 6847",
+    phone: "+1 234 567",
     active: true,
     password:"123456"
   },
