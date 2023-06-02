@@ -34,7 +34,6 @@ const UpdateUser = () => {
 
   const navigate = useNavigate();
 
-
   useEffect(() => {
     fetchSingleUser(id);
     return () => {
@@ -42,6 +41,7 @@ const UpdateUser = () => {
     };
   }, [id, fetchSingleUser, resetSingleUser]);
 
+  console.log(singleUser);
 
   const {
     register,
@@ -68,8 +68,6 @@ const UpdateUser = () => {
     }
     navigate("/users");
   };
-
-  console.log(singleUser)
 
   return (
     <S.Container>
@@ -116,19 +114,21 @@ const UpdateUser = () => {
             />
           </S.InputContainer>
           <S.ActiveContainer>
-            <span>Active</span>
             <Controller
               control={control}
               name="active"
-              render={({ field }) => (
-                <S.ActiveButton
-                  ref={field.ref}
-                  onClick={() => field.onChange(!field.value)}
-                  active={field.value}
-                >
-                  <div />
-                </S.ActiveButton>
-              )}
+              render={({ field}) => {
+                console.log("*",field);
+                return (
+                  <S.ActiveButton
+                    ref={field.ref}
+                    onClick={() => field.onChange(!field.value)}
+                    active={field.value}
+                  >
+                    <div />
+                  </S.ActiveButton>
+                );
+              }}
             />
           </S.ActiveContainer>
           <Button type="submit">Update User</Button>

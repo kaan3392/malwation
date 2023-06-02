@@ -35,7 +35,7 @@ enum LocalStorageKey {
 
 const wait = () => new Promise((resolve) => setTimeout(resolve, 1000));
 
-export const useStore = create<Store>((set) => ({
+export const useStore = create<Store>((set, get) => ({
   users: [],
   singleUser: undefined,
   usersLoading: false,
@@ -80,7 +80,7 @@ export const useStore = create<Store>((set) => ({
     set((prev) => ({ ...prev, singleUserLoading: true }));
     try {
       await wait();
-      const user = data.find((u) => u.id === id);
+      const user = get().users.find((u) => u.id === id);
       if (!user) throw new Error("User not found");
       const { password, ...userInfo } = user;
       set((prev) => ({
