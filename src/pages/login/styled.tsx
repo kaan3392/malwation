@@ -20,22 +20,16 @@ export const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   gap: 20px;
-`;
-
-export const Title = styled.h1`
-  color: #b5b5b5;
-  font-size: 40px;
-  font-weight: bold;
-  letter-spacing: 3px;
-  text-align: center;
-
+  @media only screen and (max-width: 768px) {
+    min-width: 300px;
+  }
 `;
 
 export type SubtitleProps = {
   bold?: boolean;
 };
 
-export const Subtitle = styled.p<SubtitleProps>`
+export const Subtitle = styled.h2<SubtitleProps>`
   font-weight: ${(props) => (props.bold ? "bold" : "normal")};
   font-size: ${(props) => (props.bold ? "35px" : "18px")};
   letter-spacing: ${(props) => (props.bold ? "2px" : "0px")};

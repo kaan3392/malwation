@@ -1,12 +1,12 @@
-import Button from "../Button";
-import { useStore } from "../../store";
 import * as S from "./styled";
-import z from "zod";
-import { useForm, Controller } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
 import FormItem from "../FormItem";
 import SelectOfRole from "../SelectOfRole";
+import Button from "../Button";
 import { useNavigate } from "react-router-dom";
+import { useStore } from "../../store";
+import { Controller, useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import z from "zod";
 
 const schema = z.object({
   email: z.string().email(),
@@ -19,7 +19,6 @@ const schema = z.object({
 type FormValues = z.infer<typeof schema>;
 
 const UpdateForm = () => {
-
   const singleUser = useStore((state) => state.singleUser);
   const updateUser = useStore((state) => state.updateUser);
 
@@ -48,7 +47,6 @@ const UpdateForm = () => {
 
     navigate("/users");
   };
-
 
   return (
     <S.UpdateForm

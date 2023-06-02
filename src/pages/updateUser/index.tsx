@@ -1,11 +1,11 @@
-import * as S from "./styled";
-import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { useStore } from "../../store";
-import { ArrowLeftIcon } from "../../svg/Svg";
+import { useEffect } from "react";
+import toast, { Toaster } from "react-hot-toast";
 import LoadingScreen from "../../components/Loading";
+import { ArrowLeftIcon } from "../../svg/Svg";
 import UpdateForm from "../../components/UpdateForm";
-import { Toaster, toast } from "react-hot-toast";
+import * as S from "./styled";
 
 const UpdateUser = () => {
   const fetchSingleUser = useStore((state) => state.fetchSingleUser);
@@ -28,7 +28,7 @@ const UpdateUser = () => {
     };
   }, [id, fetchSingleUser, resetSingleUser]);
 
-  console.log(singleUser)
+  console.log(singleUser);
 
   useEffect(() => {
     if (singleUserError) {

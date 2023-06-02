@@ -3,9 +3,9 @@ import * as S from "./styled";
 import { useStore } from "../../store";
 import { User } from "../../types";
 import Input from "../Input";
-import Pagination from "../Pagination";
-import UsersTable from "../UserTable";
 import { FilterIcon } from "../../svg/Svg";
+import UsersTable from "../UserTable";
+import Pagination from "../Pagination";
 
 const Users = () => {
   const users = useStore((state) => state.users);

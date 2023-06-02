@@ -1,15 +1,14 @@
-import Button from "../../components/Button";
-import FormItem from "../../components/FormItem";
-import Logo from "../../components/Logo";
-import * as S from "./styled";
+import { useEffect } from "react";
+import { Navigate, useLocation, useNavigate } from "react-router-dom";
 import z from "zod";
+import { useStore } from "../../store";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useStore } from "../../store";
-import { useNavigate, useLocation, Navigate } from "react-router-dom";
 import toast, { Toaster } from "react-hot-toast";
-
-import { useEffect } from "react";
+import Logo from "../../components/Logo";
+import FormItem from "../../components/FormItem";
+import Button from "../../components/Button";
+import * as S from "./styled";
 
 const schrema = z.object({
   email: z.string().email(),
