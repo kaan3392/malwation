@@ -25,7 +25,6 @@ const Users = () => {
     );
   }, [search, users]);
 
-console.log(filteredUser)
   return (
     <S.Container>
       <S.Wrapper>

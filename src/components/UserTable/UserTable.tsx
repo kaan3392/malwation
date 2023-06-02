@@ -37,11 +37,7 @@ const UsersTable = () => {
     return <LoadingScreen />;
   }
 
- 
-
-
-console.log(deleteUserLoading)
-  return (
+   return (
     <S.Container>
       <S.Table>
         <S.TableHead>

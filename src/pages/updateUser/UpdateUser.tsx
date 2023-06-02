@@ -20,15 +20,12 @@ const UpdateUser = () => {
 
   useEffect(() => {
     fetchSingleUser(id);
-    console.log("naber");
-    console.log(id);
 
     return () => {
       resetSingleUser();
     };
   }, [id, fetchSingleUser, resetSingleUser]);
 
-  console.log(singleUser);
 
   useEffect(() => {
     if (singleUserError) {
