@@ -27,7 +27,6 @@ export const TableBody = styled.tbody`
 export const TableRow = styled.tr`
   border-bottom: 1px solid #ddd;
   width: 100%;
-  cursor: pointer;
 
   svg {
     width: 15px;

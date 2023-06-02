@@ -11,7 +11,6 @@ const UpdateUser = () => {
   const fetchSingleUser = useStore((state) => state.fetchSingleUser);
   const resetSingleUser = useStore((state) => state.resetSingleUser);
 
-  const singleUser = useStore((state) => state.singleUser);
   const singleUserLoading = useStore((state) => state.singleUserLoading);
   const singleUserError = useStore((state) => state.singleUserError);
 
