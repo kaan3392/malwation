@@ -5,8 +5,8 @@ import * as Svg from "../../svg/Svg";
 
 import { useStore } from "../../store";
 import { linksBottom, linksTop } from "./constants";
-import Logo from "../Logo/Logo.tsx";
-import Input from "../Input/Input.tsx";
+import Logo from "../Logo/Logo";
+import Input from "../Input/Input";
 
 const Sidebar = () => {
   const logout = useStore((state) => state.logout);

@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import * as S from "./styled";
-import Sidebar from "../Sidebar/Sidebar.tsx";
+import Sidebar from "../Sidebar/Sidebar";
 
 const Layout = () => {
   return (

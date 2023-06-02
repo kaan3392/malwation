@@ -6,10 +6,10 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import toast, { Toaster } from "react-hot-toast";
 
-import FormItem from "../../components/FormItem/FormItem.tsx";
-import Button from "../../components/Button/Button.tsx";
+import FormItem from "../../components/FormItem/FormItem";
+import Button from "../../components/Button/Button";
 import * as S from "./styled";
-import Logo from "../../components/Logo/Logo.tsx";
+import Logo from "../../components/Logo/Logo";
 
 const schrema = z.object({
   email: z.string().email(),

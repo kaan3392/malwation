@@ -1,4 +1,4 @@
-import Users from "../../components/Users/Users.tsx";
+import Users from "../../components/Users/Users";
 import * as S from "./styled"
 
 const UserList = () => {
