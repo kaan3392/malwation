@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { SubtitleProps } from "./types";
 
 export const Container = styled.div`
   width: 100vw;
@@ -31,6 +30,10 @@ export const Title = styled.h1`
   text-align: center;
 
 `;
+
+export type SubtitleProps = {
+  bold?: boolean;
+};
 
 export const Subtitle = styled.p<SubtitleProps>`
   font-weight: ${(props) => (props.bold ? "bold" : "normal")};

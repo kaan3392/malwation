@@ -2,11 +2,12 @@ import { createBrowserRouter } from "react-router-dom";
 import UserList from "../pages/usersList";
 import UpdateUser from "../pages/updateUser";
 import Login from "../pages/login";
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import PrivateRoute from "../components/PrivateRoute";
 import HomePage from "../pages/home";
 import ProjectsPage from "../pages/project";
 import TasksPage from "../pages/tasks";
+import NotFound from "../pages/notFound";
 
 export const router = createBrowserRouter([
   {
@@ -42,5 +43,9 @@ export const router = createBrowserRouter([
         element: <UpdateUser />,
       },
     ],
+  },
+  {
+    path: "*",
+    element: <NotFound />,
   },
 ]);

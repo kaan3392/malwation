@@ -1,5 +1,8 @@
 import styled from "styled-components";
-import { IPropsLogo } from "./types";
+
+export interface IPropsLogo {
+  login?: boolean;
+}
 
 
 export const Title = styled.h1<IPropsLogo>`

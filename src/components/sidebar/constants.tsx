@@ -1,8 +1,10 @@
 import * as Svg from "../../svg/Svg";
-import { LinksProps } from "./types";
 
-
-
+export interface LinksProps {
+  name: string;
+  path: string;
+  icon: React.ReactNode;
+}
 
 export const linksTop:LinksProps[] = [
   {

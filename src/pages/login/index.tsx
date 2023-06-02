@@ -1,6 +1,6 @@
-import Button from "../../components/button";
-import FormItem from "../../components/formItem";
-import Logo from "../../components/logo";
+import Button from "../../components/Button";
+import FormItem from "../../components/FormItem";
+import Logo from "../../components/Logo";
 import * as S from "./styled";
 import z from "zod";
 import { useForm } from "react-hook-form";

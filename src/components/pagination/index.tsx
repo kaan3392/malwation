@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useStore } from "../../store";
 import * as S from "./styled";
 
@@ -29,7 +29,7 @@ const Pagination = () => {
     <S.PaginationContainer>
       <S.Boxes>
         <S.Box onClick={() => handleClick("prev")}>{"<"}</S.Box>
-        {new Array(pages).fill(0).map((page, index) => (
+        {new Array(pages).fill(0).map((_, index) => (
           <S.Box
             key={index}
             active={currentPage === index + 1}

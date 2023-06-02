@@ -1,7 +1,7 @@
 import * as S from "./styled";
 import { DeleteIcon, UpdatetIcon } from "../../svg/Svg";
 import { useStore } from "../../store";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo } from "react";
 import LoadingScreen from "../Loading";
 import { useNavigate } from "react-router-dom";
 
@@ -14,6 +14,7 @@ const UsersTable = () => {
   const currentPage = useStore((state) => state.currentPage);
 
   const deleteUser = useStore((state) => state.deleteUser);
+  const deleteUserLoading = useStore((state) => state.deleteUserLoading);
   const currentUser = useStore((state) => state.currentUser);
 
   const usersToShow = useMemo(() => {
@@ -36,6 +37,10 @@ const UsersTable = () => {
     return <LoadingScreen />;
   }
 
+ 
+
+
+console.log(deleteUserLoading)
   return (
     <S.Container>
       <S.Table>
@@ -50,7 +55,7 @@ const UsersTable = () => {
         </S.TableHead>
         <S.TableBody>
           {usersToShow.map((user) => (
-            <S.TableRow key={user.id}>
+            <S.TableRow  key={user.id}>
               <S.TableData>{user.name}</S.TableData>
               <S.TableData>{user.email}</S.TableData>
               <S.TableData>{user.phone}</S.TableData>
@@ -74,6 +79,8 @@ const UsersTable = () => {
               )}
             </S.TableRow>
           ))}
+
+          <td></td>
         </S.TableBody>
       </S.Table>
     </S.Container>

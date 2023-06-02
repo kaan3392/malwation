@@ -13,17 +13,17 @@ interface Store {
   deleteUserError?: Error;
   singleUserLoading?: boolean;
   singleUserError?: Error;
+  loginLoading?: boolean;
+  loginError?: Error;
+  isAuth: boolean;
+  currentUser?: User;
+  currentPage: number;
   fetchUsers: () => Promise<void>;
   fetchSingleUser: (id: string) => Promise<void>;
   updateUser: (id: string, user: Partial<User>) => Promise<void>;
   deleteUser: (id: string) => Promise<void>;
   login: (email: string, password: string) => Promise<{ success: boolean }>;
-  loginLoading?: boolean;
-  loginError?: Error;
   logout: () => void;
-  isAuth: boolean;
-  currentUser?: User;
-  currentPage: number;
   changePage: (page: number) => void;
   resetSingleUser: () => void;
 }
@@ -76,31 +76,6 @@ export const useStore = create<Store>((set, get) => ({
       }));
     }
   },
-
-  // fetchSingleUser: async (id) => {
-  //   set((prev) => ({ ...prev, singleUserLoading: true }));
-  //   try {
-  //     await wait();
-  //     const arr = get().users;
-  //     console.log(arr)
-  //     const user = get().users.find((u) => u.id === id);
-  //     if (!user) throw new Error("User not found!");
-  //     const { password, ...userInfo } = user;
-  //     set((prev) => ({
-  //       ...prev,
-  //       singleUserLoading: false,
-  //       singleUserError: undefined,
-  //       singleUser: userInfo,
-  //     }));
-  //     localStorage.setItem(LocalStorageKey.SingleUser, JSON.stringify(userInfo));
-  //   } catch (err) {
-  //     set((prev) => ({
-  //       ...prev,
-  //       singleUserLoading: false,
-  //       singleUserError: err as Error,
-  //     }));
-  //   }
-  // },
   fetchSingleUser: async (id) => {
     set((prev) => ({ ...prev, singleUserLoading: true }));
     try {

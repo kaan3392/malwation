@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 import { useStore } from "../../store";
 import { ArrowLeftIcon } from "../../svg/Svg";
 import LoadingScreen from "../../components/Loading";
-import UpdateForm from "../../components/updateForm";
+import UpdateForm from "../../components/UpdateForm";
 import { Toaster, toast } from "react-hot-toast";
 
 const UpdateUser = () => {

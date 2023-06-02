@@ -1,6 +1,6 @@
-import LetterI from "../../letters/letterI";
-import LetterO from "../../letters/letterO";
-import LetterW from "../../letters/letterW";
+import LetterI from "../../letters/LetterI";
+import LetterO from "../../letters/LetterO";
+import LetterW from "../../letters/LetterW";
 import { IPropsLetter } from "../../letters/types";
 import * as S from "./styled";
 

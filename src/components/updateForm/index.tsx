@@ -1,11 +1,11 @@
-import Button from "../button";
+import Button from "../Button";
 import { useStore } from "../../store";
 import * as S from "./styled";
 import z from "zod";
 import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import FormItem from "../../components/formItem";
-import SelectOfRole from "../../components/selectOfRole";
+import FormItem from "../FormItem";
+import SelectOfRole from "../SelectOfRole";
 import { useNavigate } from "react-router-dom";
 
 const schema = z.object({

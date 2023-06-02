@@ -2,9 +2,9 @@ import { useMemo, useState } from "react";
 import * as S from "./styled";
 import { useStore } from "../../store";
 import { User } from "../../types";
-import Input from "../input";
-import Pagination from "../pagination";
-import UsersTable from "../userTable";
+import Input from "../Input";
+import Pagination from "../Pagination";
+import UsersTable from "../UserTable";
 import { FilterIcon } from "../../svg/Svg";
 
 const Users = () => {

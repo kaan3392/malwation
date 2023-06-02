@@ -1,5 +1,5 @@
-import Input from "../input";
-import Logo from "../logo";
+import Input from "../Input";
+import Logo from "../Logo";
 
 import * as Svg from "../../svg/Svg";
 import * as S from "./styled";

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { IPropsCircle, IPropsTableData } from "./types";
 
 export const Container = styled.div`
   width: 100%;
@@ -57,11 +56,21 @@ export const TableHeadData = styled.th`
   text-align: left;
 `;
 
+export interface IPropsTableData {
+  roleOfUser?: boolean;
+}
+
 export const TableData = styled.td<IPropsTableData>`
   padding: 12px;
   text-align: left;
   text-transform: ${(props) => (props.roleOfUser ? "capitalize" : "none")};
+
+  
 `;
+
+export interface IPropsCircle {
+  active?: boolean;
+}
 
 export const Circle = styled.div<IPropsCircle>`
   width: 12px;
