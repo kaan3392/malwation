@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 
 const UsersTable = () => {
   const navigate = useNavigate();
+  
   const users = useStore((state) => state.users);
   const fetchUsers = useStore((state) => state.fetchUsers);
   const usersLoading = useStore((state) => state.usersLoading);

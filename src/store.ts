@@ -31,6 +31,7 @@ interface Store {
 enum LocalStorageKey {
   IsAuth = "isAuth",
   CurrentUser = "currentUser",
+  SingleUser = "singleUser",
 }
 
 const wait = () => new Promise((resolve) => setTimeout(resolve, 1000));
@@ -76,19 +77,61 @@ export const useStore = create<Store>((set, get) => ({
     }
   },
 
+  // fetchSingleUser: async (id) => {
+  //   set((prev) => ({ ...prev, singleUserLoading: true }));
+  //   try {
+  //     await wait();
+  //     const arr = get().users;
+  //     console.log(arr)
+  //     const user = get().users.find((u) => u.id === id);
+  //     if (!user) throw new Error("User not found!");
+  //     const { password, ...userInfo } = user;
+  //     set((prev) => ({
+  //       ...prev,
+  //       singleUserLoading: false,
+  //       singleUserError: undefined,
+  //       singleUser: userInfo,
+  //     }));
+  //     localStorage.setItem(LocalStorageKey.SingleUser, JSON.stringify(userInfo));
+  //   } catch (err) {
+  //     set((prev) => ({
+  //       ...prev,
+  //       singleUserLoading: false,
+  //       singleUserError: err as Error,
+  //     }));
+  //   }
+  // },
   fetchSingleUser: async (id) => {
     set((prev) => ({ ...prev, singleUserLoading: true }));
     try {
       await wait();
-      const user = get().users.find((u) => u.id === id);
-      if (!user) throw new Error("User not found");
-      const { password, ...userInfo } = user;
-      set((prev) => ({
-        ...prev,
-        singleUserLoading: false,
-        singleUserError: undefined,
-        singleUser: userInfo,
-      }));
+      const users = get().users;
+      if (users.length !== 0) {
+        const user = users.find((u) => u.id === id);
+        if (!user) throw new Error("User not found!");
+        const { password, ...userInfo } = user;
+        set((prev) => ({
+          ...prev,
+          singleUserLoading: false,
+          singleUserError: undefined,
+          singleUser: userInfo,
+        }));
+        localStorage.setItem(
+          LocalStorageKey.SingleUser,
+          JSON.stringify(userInfo)
+        );
+      } else {
+        const user =
+          JSON.parse(
+            localStorage.getItem(LocalStorageKey.SingleUser) || "null"
+          ) ?? undefined;
+        set((prev) => ({
+          ...prev,
+          singleUserLoading: false,
+          singleUserError: undefined,
+          singleUser: user,
+        }));
+      }
     } catch (err) {
       set((prev) => ({
         ...prev,
@@ -161,7 +204,10 @@ export const useStore = create<Store>((set, get) => ({
         currentUser: userInfo,
       }));
       localStorage.setItem(LocalStorageKey.IsAuth, JSON.stringify(true));
-      localStorage.setItem(LocalStorageKey.CurrentUser, JSON.stringify(user));
+      localStorage.setItem(
+        LocalStorageKey.CurrentUser,
+        JSON.stringify(userInfo)
+      );
       return {
         success: true,
       };
