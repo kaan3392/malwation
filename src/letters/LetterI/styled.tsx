@@ -9,7 +9,7 @@ export const LetterI = styled.span<IPropsLetter>`
   text-align: center;
   margin-left: -4px;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1024px) {
     font-size: ${({ login }) => (login ? "35px" : "18px")};
     margin-left:${({ login }) => (login ? "-4px" : "-6px")};
   }
@@ -28,7 +28,7 @@ export const LetterI = styled.span<IPropsLetter>`
     width: 0px;
     height: 0px;
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 1024px) {
       bottom: ${({ login }) => (login ? "8.5px" : "3px")};
       left: ${({ login }) => (login ? "3px" : "-0.5px")};
     }

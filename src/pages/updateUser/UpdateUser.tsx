@@ -25,7 +25,6 @@ const UpdateUser = () => {
     };
   }, [id, fetchSingleUser, resetSingleUser]);
 
-
   useEffect(() => {
     if (singleUserError) {
       toast.error(singleUserError.message as string);
@@ -34,7 +33,11 @@ const UpdateUser = () => {
   }, [singleUserError?.message]);
 
   if (singleUserLoading) {
-    return <LoadingScreen />;
+    return (
+      <S.Container>
+        <LoadingScreen />
+      </S.Container>
+    );
   }
 
   if (singleUserError) {

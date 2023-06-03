@@ -6,7 +6,7 @@ export const WLetter = styled.span<IPropsLetter>`
   font-weight: 600;
   position: relative;
   color: gray;
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1024px) {
     font-size: ${({ login }) => (login ? "35px" : "18px")};
   }
 
@@ -20,7 +20,7 @@ export const WLetter = styled.span<IPropsLetter>`
     background-color: white;
     transform: rotate(166deg);
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 1024px) {
       top: ${({ login }) => (login ? "8px" : "3px")};
       left: ${({ login }) => (login ? "13px" : "6px")};
       height: ${({ login }) => (login ? "15px" : "10px")};

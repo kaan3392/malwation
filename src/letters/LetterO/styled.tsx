@@ -12,7 +12,7 @@ export const Div1 = styled.span<IPropsLetter>`
   display: inline-block;
   margin: 0px 5px;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1024px) {
     width: ${({ login }) => (login ? "25px" : "12.5px")};
     height: ${({ login }) => (login ? "25px" : "12.5px")};
     border: ${({ login }) => (login ? "5px solid black" : "3px solid black")};
@@ -35,7 +35,7 @@ export const Div1 = styled.span<IPropsLetter>`
     align-items: center;
     z-index: 5;
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 1024px) {
       font-size: ${({ login }) => (login ? "60px" : "31px")};
       bottom: ${({ login }) => (login ? "0" : "-1px")};
       left: ${({ login }) => (login ? "4px" : "2px")};
@@ -53,7 +53,7 @@ export const Div2 = styled.span<IPropsLetter>`
   left: ${({ login }) => (login ? "-4px" : "-5px")};
   bottom: 0;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1024px) {
     width: ${({ login }) => (login ? "4px" : "2.5px")};
     height: ${({ login }) => (login ? "4px" : "2.5px")};
     left:${({ login }) => (login ? "-4px" : "-2px")};
@@ -70,7 +70,7 @@ export const Div2 = styled.span<IPropsLetter>`
     width: 0px;
     height: 0px;
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 1024px) {
       bottom: ${({ login }) => (login ? "-4px" : "-3px")};
       border-left:${({ login }) => (login ? "5px solid #6f6f6f" : "3px solid #6f6f6f")};
       border-bottom: ${({ login }) => (login ? "5px solid transparent" : "3px solid transparent")};
@@ -88,7 +88,7 @@ export const Div3 = styled.span<IPropsLetter>`
   right: ${({ login }) => (login ? "-4px" : "-5px")};
   rotate: 180deg;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1024px) {
     right: ${({ login }) => (login ? "-4px" : "-2px")};
     height: ${({ login }) => (login ? "7px" : "2.5px")};
     width:${({ login }) => (login ? "4px" : "2.5px")};
@@ -105,7 +105,7 @@ export const Div3 = styled.span<IPropsLetter>`
     border-right: 5px solid transparent;
     width: 0px;
     height: 0px;
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 1024px) {
       bottom: ${({ login }) => (login ? "-4.5px" : "-2px")};
       border-left:${({ login }) => (login ? "5px solid #6f6f6f" : "3px solid #6f6f6f")};
       border-bottom: ${({ login }) => (login ? "5px solid transparent" : "3px solid transparent")};

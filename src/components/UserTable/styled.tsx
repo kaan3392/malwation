@@ -13,7 +13,6 @@ export const Wrapper = styled.div`
   min-width: 500px;
   overflow: hidden;
   overflow-x: auto;
-
 `;
 
 export const Table = styled.table`

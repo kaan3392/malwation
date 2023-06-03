@@ -5,10 +5,9 @@ export const Container = styled.div<BallProps>`
   display: flex;
   min-height: 50vh;
   align-items: center;
-  /* margin-top: 30px; */
   align-content: center;
   justify-content: center;
-  position: ${(props) => (props.userDeleting && "absolute")};
+  position: ${(props) => (props.userDeleting ? "absolute" :"static")};
   right: ${(props) => (props.userDeleting && "0")};
   top: ${(props) => (props.userDeleting && "0")};
 `;

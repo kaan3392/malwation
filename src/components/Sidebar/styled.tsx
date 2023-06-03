@@ -2,12 +2,13 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const Container = styled.div`
-  flex: 2;
+  flex: 2.15;
   height: 100%;
   display: flex;
   background-color: #fff;
   border-right: 1px solid lightgray;
   color: gray;
+
 `;
 
 export const Wrapper = styled.div`
@@ -62,6 +63,7 @@ export const ListItem = styled(NavLink)`
   font-weight: 500;
   @media only screen and (max-width: 768px) {
     gap: 15px;
+    font-size: 16px;
   }
   &:hover {
     background-color: #f5f5f5;
@@ -72,6 +74,11 @@ export const ListItem = styled(NavLink)`
   }
   svg {
     width: 18px;
+    height: 16px;
+    @media only screen and (max-width: 768px) {
+    width: 16px;
+    height: 16px;
+  }
   }
 `;
 
@@ -106,6 +113,9 @@ export const Information = styled.div`
 
 export const Name = styled.div`
   font-weight: 500;
+  @media only screen and (max-width: 768px) {
+    font-size: 14px;
+  }
 `;
 
 export const Email = styled.div`
@@ -121,7 +131,8 @@ export const Logout = styled.div`
     fill: red;
     cursor: pointer;
     @media only screen and (max-width: 768px) {
-    width: 18px;
+    width: 16px;
+    height: 16px;
   }
   }
 `;

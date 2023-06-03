@@ -5,6 +5,10 @@ export const UpdateForm = styled.form`
   flex-direction: column;
   gap: 20px;
   width: 60%;
+  @media only screen and (max-width: 768px) {
+    width: 90%;
+  }
+
 `;
 
 export const InputContainer = styled.div`
