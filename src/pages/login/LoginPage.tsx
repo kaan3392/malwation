@@ -44,7 +44,7 @@ const Login = () => {
       reset();
       return;
     }
-  }, [loginError?.message]);
+  }, [loginError,reset]);
 
   const signUp = async (info: FormValues) => {
     const { success } = await login(info.email, info.password);

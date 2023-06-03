@@ -167,8 +167,11 @@ export const useStore = create<Store>((set, get) => ({
     try {
       await wait();
       const user = data.find((u) => u.email === email && u.password === pass);
-
-      if (!user) throw new Error("Invalid credentials");
+console.log("uyari11111111111")
+console.log("user**************",user)
+if (!user) throw new Error("Invalid credentials");
+console.log("user111111",user)
+console.log("uyari22222222222")
       const { password, ...userInfo } = user;
 
       set((prev) => ({
