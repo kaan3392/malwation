@@ -17,8 +17,8 @@ export const LetterI = styled.span<IPropsLetter>`
   &:after {
     content: "";
     position: absolute;
-    bottom: ${({ login }) => (login ? "8.5px" : "6px")};
-    left: ${({ login }) => (login ? "3px" : "2px")};
+    bottom: ${({ login }) => (login ? "8.5px" : "7px")};
+    left: ${({ login }) => (login ? "3px" : "1.8px")};
     border-bottom: ${({ login }) =>
       login ? "6px solid #F5F5F5" : "5px solid white"};
     border-left: ${({ login }) =>
