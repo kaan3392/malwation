@@ -52,7 +52,7 @@ const UsersTable = () => {
             {usersToShow.map((user) => (
               <S.TableRow key={user.id}>
                 <S.TableData>{user.name}</S.TableData>
-                <S.TableData>{user.email}</S.TableData>
+                <S.TableData title={user.email} >{user.email.length > 28 ? user.email.substring(0,28) + "..." :user.email}</S.TableData>
                 <S.TableData>{user.phone}</S.TableData>
                 <S.TableData roleOfUser={true}>{user.role}</S.TableData>
                 <S.TableData>
